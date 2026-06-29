@@ -1,0 +1,32 @@
+{
+  "id": "oer-science-labs-arch-001",
+  "title": "ADRs: content format (decide first), static-site + SW tooling, hosting, content-version manifest, PDF/print",
+  "project": "oer-science-labs",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "science", "software"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "oer-science-labs is an open library of no-/low-cost, curriculum-aligned, safety-reviewed science experiment guides for under-resourced classrooms, homeschoolers, and informal educators. This task records the foundational architecture decisions. The content-format ADR must be decided FIRST because the guide schema and content precaching both depend on it; the hazard-taxonomy/hard-exclusion-list ADR is a separate task (arch-002) that must land before any guide is authored.",
+  "objective": "Produce Architecture Decision Records selecting the content format (JSON vs MDX), the static-site generator + service-worker tooling, the hosting target, the content-version manifest / hard-invalidation mechanism for safety corrections, and the PDF/print approach — sequenced so the content-format decision is made before the schema is finalized.",
+  "acceptanceCriteria": [
+    "Content-format ADR (JSON vs MDX) is recorded and explicitly marked as a prerequisite for the guide schema (data-003)",
+    "ADRs cover static-site generator + service-worker tooling, precache budget/eviction, and hosting target (static, no app server)",
+    "An ADR specifies the content-version manifest (per-guide version + integrity hash + hardInvalidate flag) and how a corrected/withdrawn guide is purged and force-refreshed (non-dismissible)",
+    "An ADR specifies the client-side PDF/print approach for per-guide printable output (no server round-trip)",
+    "Each ADR states context, options considered, decision, and consequences; decisions are consistent with MIT code / CC-BY-4.0 content and zero-telemetry constraints"
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\oer-science-labs\\PLAN.md",
+    "C:\\code\\elyos\\docs\\good-deed-definition.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts"
+  ],
+  "output": "A pull request adding the foundational ADR documents (content format decided first, site/SW tooling, hosting, content-version manifest/hard-invalidation, PDF/print) for oer-science-labs.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}
