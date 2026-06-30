@@ -1,0 +1,33 @@
+{
+  "id": "oer-science-labs-code-005",
+  "title": "Static site skeleton: installable/offline PWA shell + per-guide printable output",
+  "project": "oer-science-labs",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "science", "software", "accessibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "oer-science-labs targets educators in low-resource and low-connectivity settings. The delivery layer must work offline after first load and produce clean printed output per guide, so a teacher with no internet connection can still access and print guides. This task depends on arch-001 (content-format and site-tooling ADRs must be decided before building the site).",
+  "objective": "Build the static site skeleton using the tooling decided in arch-001: a TypeScript/ESM static site with a service-worker PWA manifest enabling installability and offline use, precache budget and eviction policy, and a client-side PDF/print output path for per-guide printable output (no server round-trip). The skeleton does not need real content; it demonstrates the offline shell and print path working correctly.",
+  "acceptanceCriteria": [
+    "Static site builds successfully with the generator and tooling chosen in arch-001",
+    "Service worker is registered; site is installable as a PWA; after first visit the shell and precached content load offline (verified by offline E2E)",
+    "Precache budget and eviction policy are implemented; the service worker does not cache unbounded content",
+    "Per-guide printable/PDF output is generated client-side (no server round-trip required); print CSS produces a readable, standalone printed guide",
+    "No backend or app server required; site deploys as static files to the hosting target chosen in arch-001",
+    "Accessibility baseline: HTML is semantically valid, skip-navigation and page landmarks are in place, site is keyboard-navigable (full a11y hardening is in a11y-010)",
+    "CSP connect-src 'none' header is set; no third-party scripts or trackers are present in the skeleton"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "A pull request adding the static site skeleton (PWA shell, service worker with offline support, per-guide print path) to the oer-science-labs repository.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

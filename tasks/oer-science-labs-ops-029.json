@@ -1,0 +1,34 @@
+{
+  "id": "oer-science-labs-ops-029",
+  "title": "Annual safety + curriculum re-validation pass",
+  "project": "oer-science-labs",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "science", "safety"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Safety guidance, official hazard classifications, and curriculum standards evolve over time. A guide that was accurate at publication may become outdated if safety agencies update their guidance, if a material is reclassified, or if curriculum standards are revised. The re-review cadence defined in ops-022 specifies that guides must be reviewed at minimum annually and immediately after any incident report or change in official guidance. This task represents one such annual re-validation pass across all published guides, with staleness flags resolved and review logs updated.",
+  "objective": "Conduct a structured annual safety and curriculum re-validation pass across all published guides. For each guide: check the safety block against current official safety guidance (relevant national science-teacher-association safety guidelines, occupational-safety and poison-control authorities); check the curriculum alignment codes and links against any updates to the mapped frameworks; verify the exclusion check is still current; update the review log with the re-review result and new lastReviewed date. Flag any guide that has changed safety status for immediate action (hard-invalidation if a safety risk is identified).",
+  "acceptanceCriteria": [
+    "All published guides are re-reviewed in this pass; none are skipped",
+    "Each guide's safety block is checked against current official safety guidance sources (national science-teacher-association guidelines, occupational-safety authorities, poison-control authorities); any discrepancy from current guidance is documented and resolved",
+    "Each guide's curriculum alignment codes and links are checked against the current state of the mapped frameworks; any broken links, deprecated codes, or revised standards are updated",
+    "The exclusion check is re-run for each guide against the current hard exclusion list; any guide that now trips an exclusion is flagged for immediate hard-invalidation",
+    "Each guide's review-log entry is updated with: re-review date, reviewer name, sources checked, exclusion re-check result, any changes made or divergence decisions",
+    "The lastReviewed date is updated on every re-validated guide",
+    "Any guide where a safety issue is identified is hard-invalidated (purge + force refresh via the content-version manifest) immediately, before the rest of the pass completes; the incident-report channel is notified",
+    "A summary report of the re-validation pass is committed to the repository: guides reviewed, changes made, any guides flagged, and the next re-review due date"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "A pull request recording updated review-log entries, updated lastReviewed dates, and a summary report for the annual safety + curriculum re-validation pass across all published oer-science-labs guides.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

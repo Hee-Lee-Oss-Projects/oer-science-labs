@@ -1,0 +1,32 @@
+{
+  "id": "oer-science-labs-sec-030",
+  "title": "Dependency/supply-chain audit + SRI hardening",
+  "project": "oer-science-labs",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["software", "security"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "oer-science-labs is a static site with no backend, but its supply chain (npm/pnpm dependencies, CDN-loaded assets if any, the service worker) represents a real attack surface. A compromised dependency or an un-hashed CDN asset could inject malicious content into what educators and learners receive. This recurring maintenance task audits the dependency tree for known vulnerabilities, ensures all deps are pinned in the lockfile, and applies or hardens Subresource Integrity (SRI) for any third-party assets served. The no-telemetry/no-outbound-request guarantee must be preserved.",
+  "objective": "Conduct a dependency and supply-chain audit of the oer-science-labs repository: run pnpm audit, review any flagged vulnerabilities, update affected packages (patch/minor only unless a breaking change is clearly safe), confirm the pnpm lockfile is fully pinned, and apply or verify Subresource Integrity (SRI) hashes on any third-party assets referenced in HTML/templates. Confirm the CI no-telemetry E2E still passes after all updates. Produce a brief audit report committed to the repository.",
+  "acceptanceCriteria": [
+    "pnpm audit is run and all high/critical vulnerabilities are resolved (patched, pinned to a safe version, or documented with a mitigation if no fix exists)",
+    "The pnpm lockfile is fully pinned after updates; no floating version ranges remain that could cause supply-chain drift on the next install",
+    "All third-party assets loaded in HTML/templates (fonts, icons, scripts — if any) carry SRI hashes; any asset without an SRI hash is either removed, self-hosted, or has an SRI hash added",
+    "The CI no-telemetry E2E test passes after all dependency updates: no unexpected outbound network request is introduced by any updated package",
+    "The CSP connect-src 'none' assertion remains intact; no new external origins are introduced",
+    "A brief audit report is committed to the repository recording: audit date, packages updated, vulnerabilities addressed, SRI changes made, any open issues with mitigations, and the next recommended audit date"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "A pull request resolving flagged dependency vulnerabilities, pinning the lockfile, hardening SRI on any third-party assets, and committing an audit report to the oer-science-labs repository.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

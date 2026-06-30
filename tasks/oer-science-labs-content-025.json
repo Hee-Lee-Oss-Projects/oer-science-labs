@@ -1,0 +1,34 @@
+{
+  "id": "oer-science-labs-content-025",
+  "title": "Outdoor / field-science guides (weather, ecology, astronomy-by-eye)",
+  "project": "oer-science-labs",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "science", "safety"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "oer-science-labs primarily covers indoor, household-materials experiments. Many schools and informal educators also have access to outdoor spaces — schoolyards, parks, gardens — where observation-based science (weather measurement, ecology transects, astronomy-by-eye) is safe, low-cost, and highly engaging. Outdoor guides introduce additional safety considerations not present indoors: sun exposure, heat, UV, environmental hazards (uneven terrain, insects, plants), and weather-dependent timing. These must be addressed as first-class safety concerns in the guide schema.",
+  "objective": "Author a set of outdoor and field-science experiment guides covering disciplines such as weather/meteorology (cloud identification, temperature measurement, wind observation), ecology (plant or invertebrate transects, soil observation, water quality by observation), and naked-eye astronomy (moon phase tracking, constellation observation, shadow length / sundial). Each guide must carry a full safety block with outdoor-specific hazards (sun/UV, heat, terrain, environmental) and pass the same dual-review and dry-run process as indoor guides.",
+  "acceptanceCriteria": [
+    "At least 4 outdoor/field-science guides are authored spanning at least 2 of the 3 topic areas (weather, ecology, naked-eye astronomy)",
+    "Each guide carries a complete safety block including outdoor-specific hazards: sun/UV exposure, heat/dehydration, terrain/footing, insect or plant contact where relevant, weather dependency, and required adult supervision for any outdoor field activity",
+    "No guide requires specialized lab equipment; all required items are household or freely available (measuring tape, paper, pencil, containers, etc.)",
+    "Each guide passes the CI exclusion check; no guide includes activities on the hard exclusion list (e.g. open flame, chemical use outdoors, high-voltage, etc.)",
+    "Every claim, measurement technique, and identification criterion is cited to an open/PD/CC source with retrieval date and license",
+    "Each guide is authored, science-reviewed, and credentialed-safety-approved by distinct people; a PR-tied review-log entry records roles, sources checked, exclusion-check result, and dry-run result",
+    "Each guide is physically dry-run by a second educator in an outdoor setting to confirm timing, safety, and that the procedure works as written under realistic conditions",
+    "Guides render correctly in the static site with clean print output; outdoor-specific safety callouts are visually distinct"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "A pull request adding at least 4 outdoor/field-science guides (spanning weather, ecology, or naked-eye astronomy), each with outdoor-specific safety blocks, full citations, dual review, and dry-run results, to the oer-science-labs repository.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

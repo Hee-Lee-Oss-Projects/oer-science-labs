@@ -1,0 +1,33 @@
+{
+  "id": "oer-science-labs-content-023",
+  "title": "Easy-read / low-literacy guide variants",
+  "project": "oer-science-labs",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "science", "safety", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "oer-science-labs targets educators with no laboratory, no budget, and limited connectivity — including those working with learners who have limited literacy or who need simplified language. Standard guides are written for a general grade-band reading level, but some learners (younger children, ELL students, learners with cognitive disabilities, or those in low-literacy settings) benefit from alternative versions with simplified vocabulary, shorter sentences, more visuals, and enhanced accessibility. These variants extend the library's reach without replacing the peer-reviewed originals.",
+  "objective": "Produce easy-read / low-literacy variants of a representative set of published guides. Each variant must retain the full safety block (no simplification that removes a hazard warning, PPE requirement, minAge, supervision level, allergen/ingestion note, disposal instruction, or prohibited substitution) and must be reviewed for both accessibility/readability and science/safety accuracy. Variants are distinct documents linked to their parent guide and carry the same outputLicense (CC-BY-4.0).",
+  "acceptanceCriteria": [
+    "Easy-read variants are produced for at least 3 published guides, chosen to span at least 2 grade bands",
+    "Each variant uses simplified vocabulary and shorter sentences appropriate for a lower reading level, verified by a readability check tool (target: Flesch-Kincaid or equivalent grade level below the standard version)",
+    "Every safety callout from the parent guide is preserved in the variant — no hazard warning, PPE requirement, minAge, supervision level, allergen/ingestion note, disposal instruction, or prohibited substitution is omitted or softened",
+    "Each variant is reviewed for accessibility and readability by an a11y reviewer or low-literacy specialist (distinct from the author) and for science/safety accuracy by reviewers distinct from the author",
+    "Variants are linked to their parent guide in the schema and clearly labeled as simplified versions; the parent guide's review log is referenced",
+    "Variants conform to the guide schema (data-003), pass CI schema-validation and the exclusion check, and carry outputLicense: CC-BY-4.0 with source attribution preserved",
+    "The authoring process for easy-read variants is documented so future contributors can produce additional variants consistently"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "A pull request adding easy-read / low-literacy variants of at least 3 published guides (with full safety blocks preserved, accessibility/readability reviewed, and science/safety accuracy reviewed) to the oer-science-labs repository.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

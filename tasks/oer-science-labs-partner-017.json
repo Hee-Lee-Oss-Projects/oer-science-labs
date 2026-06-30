@@ -1,0 +1,32 @@
+{
+  "id": "oer-science-labs-partner-017",
+  "title": "Secure named partner: need confirmation, disciplines, grade bands, languages, field-testing commitment",
+  "project": "oer-science-labs",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "science"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "oer-science-labs currently has verifiedNeed: false across all tasks because no named partner has confirmed need in writing. The project's full Definition of Shipped (partner-validated) requires a named school, district, teacher association, or OER/education nonprofit to confirm need, name priority disciplines/grade-bands/languages, and ideally commit to classroom field-testing. This task is the outreach and securing process. Success unlocks verifiedNeed=true and a concrete requestor across all tasks.",
+  "objective": "Identify, engage, and secure a commitment from at least one named partner organization (school, district, teacher association, recognized OER/education nonprofit, or science educators' body) that confirms the need for free, safe, low-cost, standards-aligned science guides in writing (letter of support or MOU), names priority disciplines, grade bands, languages, and material-availability constraints, and ideally commits to classroom field-testing of at least 5 guides. Document the partner engagement process and outcome.",
+  "acceptanceCriteria": [
+    "At least one named partner organization is identified and confirms the need for the library in writing (letter of support or MOU on file)",
+    "The partner names priority disciplines, grade bands, languages, and material-availability constraints in the written confirmation",
+    "The partner ideally commits to classroom field-testing of at least 5 guides (required for steward-020)",
+    "The partner engagement document records: organization name, contact role, date of confirmation, form of confirmation (letter/MOU), priority disciplines/grade-bands/languages named, field-testing commitment (yes/no/conditional), and any constraints stated",
+    "On success, verifiedNeed is flipped to true and requestor is set to the named organization across all oer-science-labs task files",
+    "No personal data of students, parents, or non-public contacts is recorded or committed to the repository; any personal data received (e.g. contact email) is handled per the partner's data-sharing agreement and not committed"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "A document recording the secured partner commitment (letter of support or MOU reference, named disciplines/grade-bands/languages, field-testing commitment) and a PR updating verifiedNeed and requestor across task files.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "oer-science-labs-content-006",
+  "title": "Sample guide (e.g. density tower / red-cabbage pH indicator): source-cited, dual-reviewed, dry-run",
+  "project": "oer-science-labs",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "science", "safety"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "oer-science-labs needs one complete, fully-reviewed sample guide to prove the end-to-end pipeline — schema, validation, dual review, dry-run, and CI — works before committing to the first guide set (content-007). This guide demonstrates the process and becomes the reference for subsequent guides. The guide must demonstrate that household materials and no lab equipment are sufficient. Depends on data-003 (schema) and arch-002 (hazard taxonomy + exclusion list); the safety framework must exist before any guide is authored.",
+  "objective": "Author one complete experiment guide (suggested: density tower or red-cabbage pH indicator) conforming to the guide schema from data-003, with every claim and material step traceable to a cited open/PD/CC source (with retrieval date and license), a complete and accurate safety block, an exclusion-check that passes, and all three review roles filled by distinct people. The guide must be physically dry-run by a second educator before final approval. A PR-tied, append-only review-log entry must be written recording the three named roles, sources checked, exclusion-check result, and dry-run result.",
+  "acceptanceCriteria": [
+    "Every claim, material, and procedure step is traceable to a cited open/PD/CC source with retrieval date and license; no verbatim copying of copyrighted text; only open/PD/CC media are used",
+    "Guide carries a complete, accurate safety block: hazards (class/severity/mitigation), PPE required, minAge and supervision level, allergens/ingestion notes, disposal class and instructions, prohibited substitutions, firstAidRef link, and exclusionCheck: 'pass'",
+    "Guide passes the CI exclusion check (no barred activity class from arch-002 is present)",
+    "Guide is runnable within the declared cost ceiling using listed materials and substitutions, with no special lab equipment required",
+    "authoredBy, scienceReviewedBy, and safetyApprovedBy are distinct people; the safety approver meets the credential bar (qualified science teacher with lab-safety training, lab safety officer, or occupational-safety/industrial-hygiene professional)",
+    "Guide is physically dry-run and reproduced by a second educator (not the author) before final approval; dry-run result confirms materials, cost, timing, and that the procedure works as written",
+    "A PR-tied, append-only review-log entry is written recording PR number, commit SHA, contentVersion, the three named roles, sources checked, exclusion-check result, dry-run result, and any divergence decision",
+    "Guide renders correctly from the schema in the static site, with print output clean and readable"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "A pull request adding one complete, source-cited, dual-reviewed, and dry-run experiment guide (conforming to the data-003 schema) to the oer-science-labs repository, with a PR-tied review-log entry.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

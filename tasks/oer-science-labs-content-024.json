@@ -1,0 +1,33 @@
+{
+  "id": "oer-science-labs-content-024",
+  "title": "Pictograph/icon set for materials, hazards & PPE (license-clean)",
+  "project": "oer-science-labs",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "science", "design", "accessibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "oer-science-labs guides include materials lists, hazard classes, PPE requirements, and disposal instructions that are expressed as text. A consistent, open-licensed pictograph/icon set would make these elements more recognizable at a glance, support low-literacy users, ease translation/localization, and improve accessibility — especially in print and offline contexts. All assets must be open, public-domain, or CC-licensed; no proprietary or kit-vendor trademarks may be used.",
+  "objective": "Produce or curate an open-licensed pictograph/icon set covering the common materials, hazard classes, PPE items, and disposal classes used in oer-science-labs guides. Each icon must be license-verified (original, public domain, or CC-BY/CC0), attributed, and suitable for both on-screen and print use. Deliver a design specification describing the icon set's structure, naming convention, attribution records, and integration guidance for guide authors and the CI/site tooling.",
+  "acceptanceCriteria": [
+    "An icon set is produced or curated covering at minimum: common materials categories (liquids, solids, heat source, measuring tools), each hazard class in the taxonomy (chemical, fire/heat, sharp, electrical, biological, projectile, pressure, allergen/ingestion, environmental, photosensitivity/sensory), all PPE items referenced in guides (goggles, gloves, apron, etc.), and the disposal classes defined in arch-002",
+    "Every icon is original, public-domain, or openly licensed (CC0, CC-BY, or equivalent); license, source URL, and attribution for each icon are recorded in a machine-readable attribution file committed to the repository",
+    "No proprietary icons, kit-vendor trademarks, or images from sources with unclear or restrictive licenses are included",
+    "Icons are delivered as scalable vector files (SVG) suitable for both on-screen and print rendering; fallback alt-text labels are specified for each icon for accessibility",
+    "A naming convention and taxonomy mapping file links each icon to the corresponding hazard class, PPE type, material category, or disposal class in the guide schema",
+    "A design specification document describes the icon set structure, file naming, attribution requirements, how guide authors reference icons, and how the static site renders them; the spec is version-controlled in the repository",
+    "The icon set is reviewed by an a11y reviewer to confirm icons are distinguishable in greyscale/print and meet minimum contrast or labeling requirements for WCAG 2.2 AA use"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "A pull request adding the open-licensed pictograph/icon set (SVG files, attribution records, taxonomy mapping, and design specification) for materials, hazards, and PPE to the oer-science-labs repository.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

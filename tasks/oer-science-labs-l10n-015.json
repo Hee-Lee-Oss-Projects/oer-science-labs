@@ -1,0 +1,34 @@
+{
+  "id": "oer-science-labs-l10n-015",
+  "title": "First non-English UI localization (provisional; partner may override locale choice)",
+  "project": "oer-science-labs",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "science", "translation", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "oer-science-labs targets educators across multiple languages. This task produces the first non-English UI localization — the locale choice is provisional and should be confirmed or overridden by the partner when one is secured (partner-017). The translation must be reviewed for safety-term accuracy (not just fluency) by a competent speaker paired with a safety reviewer, since UI strings include guide safety labels, hazard icons, and PPE descriptions. Depends on code-014 (i18n framework must exist before a locale catalog can be added).",
+  "objective": "Produce a complete UI message catalog for a first non-English locale (locale TBD; provisional until a partner is secured). Every UI string is translated, including safety-related labels (hazard levels, PPE names, allergen/ingestion notices, disposal labels). The translation is reviewed for safety-term accuracy by a competent speaker of the target language, paired with a safety reviewer who confirms safety terms match official safety guidance in that language.",
+  "acceptanceCriteria": [
+    "A complete UI message catalog is produced for the chosen locale covering all required message keys (build-time completeness check passes)",
+    "All safety-related UI strings (hazard labels, PPE names, allergen/ingestion notices, disposal labels, exclusion-check notices) are translated with accuracy reviewed against official safety terminology in the target language where available",
+    "Translation is reviewed by a competent speaker of the target language (not machine-translation-only) paired with a safety reviewer who verifies safety-term accuracy",
+    "Units are localized appropriately for the target locale (metric primary; imperial where locally standard)",
+    "Locale-aware number, date, and unit formatting is verified for the target locale",
+    "The i18n framework's safe fallback to English is verified: any untranslated keys display English, never blank",
+    "The catalog file follows the format expected by the i18n framework (code-014); the completeness CI check passes",
+    "Translation review sign-off (reviewer name, safety-accuracy confirmation) is recorded in the PR"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "A pull request adding a complete, safety-accuracy-reviewed UI message catalog for the first non-English locale to the oer-science-labs repository.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

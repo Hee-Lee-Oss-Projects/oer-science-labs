@@ -1,0 +1,32 @@
+{
+  "id": "oer-science-labs-ops-011",
+  "title": "Incident-report channel + triage process (no required PII) + hard-invalidation wiring",
+  "project": "oer-science-labs",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "science", "safety", "software"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "oer-science-labs has zero-harm-incidents as its headline success metric. To achieve this, there must be a public, PII-free safety incident-report channel, a documented triage process targeting 72-hour response, and a hard-invalidation mechanism that forces cached clients to discard and refresh any guide implicated in a confirmed safety issue. This closes the M1 incident-response requirement. Depends on code-005 (the static site and service-worker/content-version manifest must exist).",
+  "objective": "Implement a public incident-report channel that accepts safety reports and near-misses without requiring personal data. Document the triage process (triage target: 72 hours; confirmed safety issue triggers hard-invalidation). Wire the hard-invalidation path: when a guide's hardInvalidate flag is set in the content-version manifest, deployed clients must purge the cached guide and force-refresh (non-dismissible) on next load. No incidental PII is committed to the repository.",
+  "acceptanceCriteria": [
+    "A public incident-report channel is established that accepts safety reports and near-misses without requiring any personal data from the reporter; the channel URL/instructions are linked from every guide page",
+    "The triage process is documented: reports are acknowledged within 72 hours; a confirmed safety issue triggers immediate escalation to hard-invalidation; a triage log (no PII) is maintained",
+    "Hard-invalidation is wired: setting hardInvalidate: true in the content-version manifest causes deployed service workers to purge the cached guide and display a non-dismissible update prompt or force-refresh on next load",
+    "An end-to-end test verifies that a guide with hardInvalidate: true is not served from cache after the manifest is updated",
+    "The incident channel does not solicit, store, or commit student-identifying or reporter-identifying information; incidental PII received is minimized and never committed to the repo",
+    "Hard-invalidation path does not break CSP connect-src 'none' or introduce unexpected outbound requests; no-telemetry CI gate continues to pass"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "A pull request adding the incident-report channel, triage process documentation, and hard-invalidation wiring (content-version manifest + service-worker purge path) to the oer-science-labs repository.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

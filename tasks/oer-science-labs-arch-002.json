@@ -1,0 +1,32 @@
+{
+  "id": "oer-science-labs-arch-002",
+  "title": "Hazard taxonomy + safety-review rubric + hard exclusion list (CI-encodable)",
+  "project": "oer-science-labs",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "science", "safety"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "oer-science-labs requires every guide to pass a credentialed safety review before publishing. This task establishes the safety framework: a versioned hazard taxonomy, a reviewer rubric, and a machine-enforceable hard exclusion list that CI checks on every PR. This ADR must land before any guide (content-006) is authored; until it does, no guide can enter the review pipeline.",
+  "objective": "Publish a hazard taxonomy defining hazard classes (chemical, fire/heat, sharp, electrical, biological, projectile, pressure, allergen/ingestion, environmental, photosensitivity/sensory), severity levels, required PPE, minimum age/supervision requirements, and disposal classes. Publish a safety-review rubric that a credentialed reviewer applies to each guide. Publish a hard exclusion list of barred activity classes represented in a format CI can enforce, plus a governance-ratified change process for amending the list.",
+  "acceptanceCriteria": [
+    "Hazard taxonomy defines all required classes: chemical, fire/heat, sharp, electrical, biological, projectile, pressure, allergen/ingestion, environmental, photosensitivity/sensory — each with severity levels, required PPE, minimum age/supervision, and disposal class",
+    "Hard exclusion list explicitly bars: concentrated/strong acids and bases beyond household-dilution norms; toxic/asphyxiant/corrosive gas generation; explosives/energetics/pyrotechnics/thermite; flame + volatile-fuel demos; mains/high-voltage/high-current; high-pressure vessels; ionizing radiation; pathogen culture; controlled/regulated substances; ingestion of non-food chemicals; vertebrate-animal or human-subject harm",
+    "Exclusion list is represented in a CI-encodable format (e.g. JSON/YAML keyword list) so CI can automatically fail any guide that trips it",
+    "Safety-review rubric specifies the checklist a credentialed safety reviewer (qualified science teacher with lab-safety training, lab safety officer, or occupational-safety/industrial-hygiene professional) applies against each guide",
+    "A change process (governance-ratified) for amending the exclusion list is defined — amendments require explicit approval, not just a PR merge",
+    "Document is versioned and stored as a first-class artifact (not prose buried in a guide), and is referenced by the content schema (data-003) and CI (code-004)"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "A pull request adding the hazard taxonomy document, safety-review rubric, and hard exclusion list (CI-encodable) to the oer-science-labs repository, as the safety framework artifact that gates all subsequent guide authoring.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

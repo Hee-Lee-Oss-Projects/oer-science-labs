@@ -1,0 +1,33 @@
+{
+  "id": "oer-science-labs-steward-020",
+  "title": "Classroom field-testing of ≥ 5 guides with a named partner; incorporate feedback",
+  "project": "oer-science-labs",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "science", "safety"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Field-testing in real classrooms with a named partner is the final gate before the project achieves its full Definition of Shipped (partner-validated). Depends on partner-017 (a named partner must be secured before field-testing can begin) and content-018 (the guides to be field-tested must be published). Student PII must not be collected; all feedback is educator/partner-level only.",
+  "objective": "Coordinate and document classroom field-testing of at least 5 oer-science-labs guides in real classrooms, run under the stated supervision requirements, with feedback collected from educators via the named partner. Feedback covers usefulness, safety, cost, timing, and any issues encountered. Issues are fixed or guides are revised; any safety concern is routed through the incident/triage and hard-invalidation path. No student PII is collected at any point.",
+  "acceptanceCriteria": [
+    "At least 5 distinct guides are field-tested in real classrooms under the stated supervision requirements, coordinated via the named partner from partner-017",
+    "Educator feedback is collected covering: usefulness of the guide, safety experience, cost achievability, timing accuracy, and any issues or near-misses — without collecting any student personal data",
+    "Feedback is documented in a field-testing report committed to the repository; the report records which guides were tested, grade bands, settings, and feedback summary (no student PII)",
+    "Any safety issue or near-miss encountered during field-testing is routed through the incident-report channel (ops-011) and triaged; any confirmed safety issue triggers hard-invalidation of the implicated guide",
+    "Issues identified in feedback are fixed or guide revisions are opened as PRs (each revision goes through the standard review process)",
+    "The field-testing report includes a sign-off from the named partner confirming the tests were conducted and feedback was collected as described",
+    "No student-identifying information is collected, stored, or committed at any point in the field-testing process"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "A field-testing report (partner-signed) documenting at least 5 guide tests in real classrooms, educator feedback, issues found and addressed, and confirmation of no student PII collection — submitted as a PR to the oer-science-labs repository.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "oer-science-labs-code-014",
+  "title": "i18n framework: catalogs, units (metric/imperial), ICU pluralization, locale formatting, completeness check, safe fallback",
+  "project": "oer-science-labs",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "science", "software", "translation"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "oer-science-labs targets educators in multiple countries and languages. The i18n framework enables localization of both the UI and guide content without requiring code changes for each new locale. A build-time completeness check prevents a half-translated locale from being served; safe fallback to English ensures safety blocks are never served as blank. Depends on code-008 (browse UI must exist before it can be internationalized).",
+  "objective": "Implement the i18n framework for oer-science-labs covering: message catalogs for UI strings (keyed, not hardcoded), metric-primary with imperial-secondary unit handling, ICU pluralization, locale-aware number and date formatting, a build-time completeness check that fails CI if a locale catalog is missing required keys, and safe fallback to English (never a blank safety block in any locale).",
+  "acceptanceCriteria": [
+    "All UI strings are externalized into locale message catalogs (no hardcoded English strings in UI components)",
+    "Metric-primary with imperial-secondary unit display is implemented and switchable per locale or user preference",
+    "ICU plural forms are used for messages requiring pluralization; locale-aware number, date, and unit formatting is implemented",
+    "Build-time completeness check fails CI when a locale catalog is missing one or more required message keys",
+    "Safe fallback to English is implemented for all locales: if a message key is missing, the English string is used rather than showing a blank or key name; safety-block keys are explicitly never blank in any locale",
+    "The i18n framework is extensible: adding a new locale requires only adding a catalog file, not code changes",
+    "Existing CI gates (schema-validation, exclusion-list, no-telemetry, offline E2E, a11y) continue to pass after this change"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "A pull request adding the i18n framework (message catalogs, unit handling, ICU pluralization, locale formatting, completeness CI check, safe English fallback) to the oer-science-labs repository.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

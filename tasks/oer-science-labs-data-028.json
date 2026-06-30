@@ -1,0 +1,35 @@
+{
+  "id": "oer-science-labs-data-028",
+  "title": "Additional curriculum frameworks added to crosswalk",
+  "project": "oer-science-labs",
+  "type": "data",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "science", "curriculum"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The initial curriculum crosswalk (data-012) covers at least 2 frameworks (e.g. NGSS plus one national/regional framework). As the guide library grows and partners from additional regions are engaged, additional frameworks become relevant. Each new framework must be license-verified before any mapping is created; for frameworks whose license does not permit reuse of standard text, mappings store only code + link + own written rationale. The crosswalk data model (from data-012) is designed to be additive so new frameworks do not require structural changes.",
+  "objective": "Add at least one additional curriculum framework to the crosswalk that is not already mapped in data-012. Verify the new framework's license, record the verification in crosswalk metadata, and create code-level mappings (standard code + link + own written rationale) for the published guides where applicable. Where full text reuse is not permitted by the framework's license, store only code and link. Ensure no verbatim restricted standard text appears anywhere in the dataset.",
+  "acceptanceCriteria": [
+    "At least one additional curriculum framework is added to the crosswalk beyond those from data-012",
+    "The new framework's license is verified before any mapping is created; the license name, terms summary, and verification date are recorded in the crosswalk metadata",
+    "Each new mapping records: framework name, standard code, link to the official standard statement, and an original written alignment rationale — no verbatim restricted standard text is embedded",
+    "Where the framework's license does not permit full text reuse, mappings contain code and link only (no paraphrased or quoted standard text)",
+    "Mappings are created for the published guides where the new framework applies; at least one alignment per applicable guide per new framework",
+    "The crosswalk data model remains additive: existing framework mappings are not modified or broken by the addition; future frameworks can still be appended",
+    "No verbatim restricted standard text appears anywhere in the crosswalk dataset or guide files after this change",
+    "The new framework is surfaced in the browse/filter UI options (code-008) if technically feasible within scope; at minimum the data is available for the UI to use"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md",
+    "https://www.nextgenscience.org/"
+  ],
+  "output": "A pull request extending the oer-science-labs curriculum crosswalk with at least one additional license-verified curriculum framework and code-level mappings for published guides.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

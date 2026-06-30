@@ -1,0 +1,34 @@
+{
+  "id": "oer-science-labs-feat-027",
+  "title": "\"Teacher pack\" bundle export (multi-guide printable + materials list)",
+  "project": "oer-science-labs",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "software", "accessibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Teachers planning a unit or a term often want to print or download a bundle of guides rather than printing each one individually. A client-side \"teacher pack\" feature lets an educator select multiple guides and generate a single printable document that includes all selected guides plus a consolidated materials list (quantities summed across experiments, deduplicating shared items). This feature is purely client-side and generates no server requests; no user data is collected.",
+  "objective": "Implement a client-side \"teacher pack\" bundle export feature that allows educators to select multiple guides from the browse view and generate a single printable/PDF-ready document. The bundle includes each selected guide in full (with its complete safety block) and a consolidated materials list summarizing all required items and quantities across the selected guides. Generation is client-side only (no server round-trip); the result is printed or saved via the browser's native print/save-as-PDF.",
+  "acceptanceCriteria": [
+    "The feature allows an educator to select multiple guides from the browse/filter view and trigger a bundle export",
+    "The exported bundle includes each selected guide in full, including its complete safety block (hazards, PPE, minAge, supervision, allergens/ingestion, disposal, prohibited substitutions, firstAidRef), without any safety-related omissions",
+    "The bundle includes a consolidated materials list that aggregates and deduplicates materials across all selected guides, with total quantities and per-guide provenance",
+    "Bundle generation is implemented entirely client-side; no network request is made during or after guide selection or bundle generation",
+    "No user data (selected guides, preferences, identity) is transmitted to any server, analytics endpoint, or third party; no localStorage or cookie is required beyond what the site already uses",
+    "The printed/PDF output is readable, accessible, and passes the same print-output quality bar as individual guide printouts (clean layout, no clipped content, readable fonts)",
+    "The feature is fully accessible: guide selection is keyboard and screen-reader operable; the bundle trigger is WCAG 2.2 AA compliant",
+    "The CI no-telemetry E2E test still passes; the offline E2E test confirms the feature works after first load with no connectivity"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "A pull request adding the client-side teacher pack bundle export (multi-guide printable output + consolidated materials list) to the oer-science-labs static site.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

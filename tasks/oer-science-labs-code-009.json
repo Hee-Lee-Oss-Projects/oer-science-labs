@@ -1,0 +1,32 @@
+{
+  "id": "oer-science-labs-code-009",
+  "title": "Cost-ceiling + readability gates wired into CI + authoring tooling",
+  "project": "oer-science-labs",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "science", "software"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "oer-science-labs commits to guides being runnable within a declared cost ceiling and within the target reading level for each grade band. These gates must be automated in CI so they cannot be skipped, and surfaced in authoring tooling so authors get feedback early. This task builds on code-004 (where the CI scaffold and stubs exist) and wires the actual cost-ceiling and readability checks end-to-end.",
+  "objective": "Wire the cost-ceiling check (guides that declare estTotalCost.ceilingRespected=false fail CI) and the per-grade-band readability check (measured readingLevel outside the target range for the guide's gradeBands fails CI) into the CI pipeline and authoring CLI/tooling. Authors must be able to run these checks locally before opening a PR.",
+  "acceptanceCriteria": [
+    "CI fails with a clear error message when a guide's estTotalCost exceeds the declared per-guide cost ceiling or sets ceilingRespected=false without justification",
+    "CI fails with a clear error message when a guide's measured readingLevel falls outside the target range for its gradeBands (per a documented grade-band/reading-level mapping)",
+    "The grade-band/reading-level target mapping is documented and version-controlled as a configuration artifact (not hardcoded silently)",
+    "A local authoring CLI command or script runs both the cost-ceiling and readability checks on a draft guide before PR, printing actionable feedback",
+    "Existing CI gates from code-004 (schema-validation, exclusion-list, no-telemetry) continue to pass after this change",
+    "At least one unit test each covers: a guide passing the cost-ceiling gate, a guide failing the cost-ceiling gate, a guide passing the readability gate, a guide failing the readability gate"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "A pull request wiring cost-ceiling and readability CI gates end-to-end in the oer-science-labs CI pipeline, with local authoring tooling that surfaces failures before PR.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

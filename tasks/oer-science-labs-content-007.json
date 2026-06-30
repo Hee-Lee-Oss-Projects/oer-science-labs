@@ -1,0 +1,35 @@
+{
+  "id": "oer-science-labs-content-007",
+  "title": "First guide set: ≥ 8 guides across ≥ 2 disciplines × ≥ 2 grade bands, dual-reviewed + dry-run",
+  "project": "oer-science-labs",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "science", "safety"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Following the sample guide (content-006), oer-science-labs needs a substantive first set of guides spanning multiple disciplines and grade bands to demonstrate the library's breadth and prove the review/validation pipeline scales. This is M1's primary content output. Each guide must go through the same dual-review and dry-run process as the sample guide. Depends on content-006 (the review and CI pipeline must be proven before scaling).",
+  "objective": "Author and publish a set of at least 8 experiment guides spanning at least 2 disciplines (e.g. physics, chemistry-safe, biology, earth/space) and at least 2 grade bands (e.g. K-2, 3-5, 6-8, 9-12). Each guide must conform to the data-003 schema, cite only open/PD/CC sources, carry a complete safety block, pass the exclusion check, stay within the cost ceiling, be runnable without special lab equipment, be dual-reviewed (science + credentialed safety) by reviewers distinct from the author, and be physically dry-run by a second educator. Each guide must have a PR-tied review-log entry.",
+  "acceptanceCriteria": [
+    "At least 8 guides are published, spanning at least 2 distinct disciplines and at least 2 distinct grade bands",
+    "Each guide conforms to the data-003 schema and passes all CI gates (schema-validation, exclusion-list, cost-ceiling, readability)",
+    "Each guide cites only open/PD/CC sources with retrieval date and license; no verbatim copying of copyrighted text; only open/PD/CC media",
+    "Each guide carries a complete and accurate safety block (hazards/PPE/allergens-ingestion/disposal/prohibited-substitutions/firstAidRef/exclusionCheck: pass)",
+    "Each guide is runnable within the declared cost ceiling using listed materials and substitutions, with no special lab equipment required",
+    "For each guide: authoredBy, scienceReviewedBy, and safetyApprovedBy are distinct people; the safety approver meets the credential bar",
+    "Each guide is physically dry-run and reproduced by a second educator (not the author) before final approval; dry-run result is recorded in the review log",
+    "Each guide has a PR-tied, append-only review-log entry recording PR number, commit SHA, contentVersion, the three named roles, sources checked, exclusion-check result, and dry-run result",
+    "All guides pass the exclusion check and are not on the hard exclusion list from arch-002"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "A pull request (or series of PRs) adding at least 8 experiment guides across at least 2 disciplines and 2 grade bands, each dual-reviewed, dry-run, source-cited, and exclusion-checked, to the oer-science-labs repository.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "oer-science-labs-content-013",
+  "title": "Alignment review: validate guide↔standard mappings + written rationale",
+  "project": "oer-science-labs",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "science", "curriculum"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The curriculum crosswalk (data-012) maps guides to standards, but mapping accuracy must be independently validated by a science/curriculum reviewer who can confirm the guide genuinely addresses the cited standard and that the written rationale is accurate and sufficient. This is a human review task, not automated validation. Depends on data-012 (mappings must exist before they can be reviewed).",
+  "objective": "Conduct a systematic alignment review of the curriculum crosswalk produced in data-012: for each guide-to-standard mapping, verify that the guide genuinely addresses the cited standard, that the standard code and link are correct, and that the written alignment rationale is accurate and non-trivial. Produce a written alignment review report documenting findings, any incorrect or weak mappings flagged, corrections made, and final sign-off.",
+  "acceptanceCriteria": [
+    "Every guide-to-standard mapping in the data-012 crosswalk is reviewed by a qualified science/curriculum reviewer (distinct from the crosswalk author)",
+    "Review confirms that each guide genuinely addresses the cited standard and that the written alignment rationale accurately explains how",
+    "Any incorrect standard codes, broken links, or weak/generic rationales are flagged and corrected before sign-off",
+    "The alignment review report documents: reviewer name and qualifications, frameworks reviewed, mappings checked, issues found, corrections made, and final sign-off date",
+    "The report is committed to the repository as a version-controlled artifact (not just a PR comment)",
+    "No verbatim restricted standard text was introduced during the review process; all corrections maintain the code+link+rationale-only model"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "A pull request adding the alignment review report (validating guide-to-standard mappings from data-012) with a qualified reviewer's sign-off, to the oer-science-labs repository.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

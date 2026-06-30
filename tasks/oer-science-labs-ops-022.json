@@ -1,0 +1,32 @@
+{
+  "id": "oer-science-labs-ops-022",
+  "title": "Outcomes-tracking process + annual/event-driven safety re-review cadence",
+  "project": "oer-science-labs",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "science", "safety"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "oer-science-labs collects no telemetry and no student PII, so outcomes are measured through educator/partner self-report and the incident channel. Without a documented outcomes-tracking process and re-review cadence, guides will go stale and the zero-harm-incidents commitment cannot be maintained long-term. This task establishes the lightweight, privacy-preserving operational processes needed for sustainability. Depends on partner-017 (outcomes process is most meaningful once a partner is secured).",
+  "objective": "Document and implement a privacy-preserving outcomes-tracking process and an annual/event-driven safety re-review cadence. Outcomes tracking counts distinct educators and class groups (not page views, not student-level data) via partner/educator self-report over rolling 12-month windows. Re-review is triggered annually and after any reported incident or change in official safety or curriculum guidance; stale guides are flagged. Zero-harm-incidents tracking is tied to the incident channel.",
+  "acceptanceCriteria": [
+    "An outcomes-tracking process is documented covering: what is measured (distinct educators/class groups over rolling 12-month windows), how (partner/educator self-report, no telemetry), how counts are de-duplicated and recorded, and how zero-harm-incidents are tracked via the incident channel",
+    "The process explicitly states: no student-level data is collected or stored; no telemetry; no in-app tracking; estimates are recorded separately from confirmed counts",
+    "A safety re-review cadence is documented and implemented: all published guides are re-reviewed at least annually and immediately after any reported incident or change in official safety or curriculum guidance",
+    "A staleness-flagging mechanism is implemented: guides whose lastReviewed date exceeds the re-review cadence are flagged in CI or the authoring tooling",
+    "The re-review process specifies who triggers it (the safety reviewer or maintainer), what is checked (full safety block against current official guidance + any incident reports), and how the outcome is recorded (new review-log entry, updated lastReviewed date)",
+    "The outcomes and re-review process documents are committed to the repository as version-controlled artifacts, not just wiki or PR comments"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "A pull request adding the outcomes-tracking process documentation and the annual/event-driven safety re-review cadence (with staleness flagging) to the oer-science-labs repository.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

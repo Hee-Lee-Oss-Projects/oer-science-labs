@@ -1,0 +1,33 @@
+{
+  "id": "oer-science-labs-l10n-016",
+  "title": "Localize ≥ 1 guide into the first non-English locale (safety terms accuracy-reviewed)",
+  "project": "oer-science-labs",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "science", "safety", "translation"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "A localized guide is a derivative work and safety errors can arise through translation, so the safety block (hazards, PPE, allergens/ingestion, disposal, prohibited substitutions) must be reviewed for safety-meaning accuracy in the target language, not only for fluency. This task produces at least one guide translated into the locale established by l10n-015. Depends on l10n-015 (the UI locale must exist) and content-007 (source guides must be finalized before translation).",
+  "objective": "Translate at least one experiment guide into the first non-English locale (established in l10n-015). The translation must cover all guide fields, with particular attention to the safety block. Every safety term must be reviewed against official safety terminology in the target language where available. Units and locale formatting must be localized. Source attribution and contentLicense CC-BY-4.0 must be preserved.",
+  "acceptanceCriteria": [
+    "At least 1 guide is fully translated into the target locale, covering all schema fields including the complete safety block",
+    "Safety block translation (hazards, PPE names, allergens/ingestion notes, disposal instructions, prohibited substitutions) is reviewed for safety-meaning accuracy — not just fluency — against official safety guidance in the target language where available",
+    "Translation is reviewed by a competent speaker of the target language paired with a safety reviewer; science/curriculum accuracy is also confirmed by the paired science reviewer",
+    "Units are localized (metric primary; imperial secondary where locally standard); locale-aware number and measurement formatting is applied",
+    "Source attribution from the original guide is preserved in the translation; contentLicense is CC-BY-4.0",
+    "The translated guide passes all CI gates: schema-validation, exclusion-list check, cost-ceiling check, readability check (for the target locale's grade band if applicable)",
+    "Translation review sign-off (reviewer names, safety-accuracy confirmation, science-accuracy confirmation) is recorded in the PR-tied review-log entry"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "A pull request adding at least one safety-accuracy-reviewed, fully localized experiment guide (in the locale from l10n-015) to the oer-science-labs repository.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "oer-science-labs-l10n-019",
+  "title": "Reach ≥ 2 fully localized languages: UI + key guides, safety terms accuracy-reviewed",
+  "project": "oer-science-labs",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "science", "safety", "translation"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "The M3 Definition of Shipped requires at least 2 fully localized languages (UI + key guides). l10n-015 and l10n-016 establish the first non-English locale. This task adds a second language and ensures both locales are complete for UI and at least key guides. Priority languages should be partner-driven. Each localized guide must have its safety block reviewed for accuracy in the target language. Depends on l10n-016 (first locale must be complete).",
+  "objective": "Add a second fully localized language to oer-science-labs, covering both the UI message catalog and at least the key guides from content-018. Ensure the first locale (l10n-015/l10n-016) is also complete for key guides. Every localized safety block must be reviewed for accuracy in the target language by a competent speaker paired with a safety reviewer. Priority language choice should reflect partner input from partner-017.",
+  "acceptanceCriteria": [
+    "A second non-English locale is added with a complete UI message catalog passing the build-time completeness check",
+    "At least the key guides (determined in consultation with the partner or steward) are localized into the second language, with all safety blocks reviewed for accuracy",
+    "The first locale from l10n-015/l10n-016 is confirmed complete for key guides (if not already done)",
+    "For each new localized guide: safety block translation is reviewed for safety-meaning accuracy by a competent speaker of the target language paired with a safety reviewer; science accuracy is confirmed",
+    "Units, number formatting, and date formatting are localized appropriately for each new locale",
+    "Source attribution and contentLicense: CC-BY-4.0 are preserved in all translations",
+    "All localized guides pass CI schema-validation, exclusion-list check, cost-ceiling check, and completeness check",
+    "Translation review sign-off (reviewer names, safety-accuracy confirmation) is recorded in each PR-tied review-log entry",
+    "Safe fallback to English is verified for all new locales"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "Pull requests adding a second fully localized language (UI + key guides, safety-accuracy-reviewed) to the oer-science-labs repository, completing the ≥ 2 languages requirement for M3.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

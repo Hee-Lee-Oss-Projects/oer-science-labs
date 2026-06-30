@@ -1,0 +1,34 @@
+{
+  "id": "oer-science-labs-data-012",
+  "title": "Curriculum crosswalk model + code-level mapping to ≥ 2 frameworks (license-clean)",
+  "project": "oer-science-labs",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "science", "curriculum"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "oer-science-labs aligns guides to curriculum standards, but standards frameworks have varied licensing that must be handled carefully (e.g. NGSS is copyright Achieve Inc.; many national curricula are Crown copyright or similarly restricted). This task defines the crosswalk data model and populates it for at least 2 frameworks using code + link + own rationale only — never embedding restricted full text. Depends on data-003 (curriculumAlignments schema field must exist) and content-007 (guides to align must exist).",
+  "objective": "Define a curriculum crosswalk data model that maps guides to standards by standard code and link (plus own alignment rationale), structured to be additive for future frameworks. Implement code-level mappings for at least 2 curriculum frameworks (e.g. NGSS plus one national/regional framework). Verify and record each framework's license before creating any mapping; where full text reuse is not permitted, store code and link only.",
+  "acceptanceCriteria": [
+    "Crosswalk data model is defined and version-controlled; structure is additive so new frameworks can be appended without breaking existing mappings",
+    "Mappings exist for at least 2 distinct curriculum frameworks (e.g. NGSS + one national/regional framework)",
+    "Each mapping records: framework name, standard code, link to the official standard statement, and an original written alignment rationale — no verbatim restricted standard text is embedded",
+    "Each framework's license is verified and recorded in the crosswalk metadata (e.g. NGSS: © Achieve, Inc., attribution required; or the applicable national curriculum license); a framework whose license cannot be cleared is referenced by code/link only",
+    "Mappings cover the guides published in content-007, with at least one alignment per guide per applicable framework",
+    "The crosswalk is machine-readable and can be used to generate discipline/standard filter options in the browse UI (code-008)",
+    "No verbatim restricted standard text appears anywhere in the crosswalk dataset or guide files"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md",
+    "https://www.nextgenscience.org/"
+  ],
+  "output": "A pull request adding the curriculum crosswalk data model and license-clean code-level mappings to at least 2 frameworks, covering the guides in content-007, to the oer-science-labs repository.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

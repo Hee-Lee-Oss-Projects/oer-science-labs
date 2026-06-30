@@ -1,0 +1,33 @@
+{
+  "id": "oer-science-labs-code-021",
+  "title": "Production deployment + versioned cache/update strategy + non-endorsement disclaimer",
+  "project": "oer-science-labs",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "science", "software"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The M3 definition of shipped requires the library to be deployed to production and accessible to the public. The versioned cache/update strategy ensures that clients receive safety corrections promptly and do not serve stale guides. A non-endorsement disclaimer prevents hostile forks or casual users from implying false endorsement by schools, agencies, or standards bodies. Depends on a11y-010 (accessibility must be hardened) and code-014 (i18n must be in place) before production deployment.",
+  "objective": "Deploy the oer-science-labs static site to its production hosting target (GitHub Pages, Netlify, or Cloudflare Pages as chosen in arch-001). Implement the versioned cache/update strategy: service-worker versioning, update detection, and a non-dismissible update prompt when a new version is available. Add the non-endorsement disclaimer on every guide page. Verify the production deployment passes all CI/CD gates.",
+  "acceptanceCriteria": [
+    "The oer-science-labs static site is deployed to the production hosting target chosen in arch-001 and is publicly accessible via HTTPS",
+    "Service-worker versioning is implemented: new deployments trigger update detection; clients receive a non-dismissible update prompt and apply the new version promptly",
+    "The content-version manifest (per-guide version, integrity hash, hardInvalidate flag) is served and checked by the service worker; a guide with hardInvalidate: true is purged from cache on all clients",
+    "A non-endorsement disclaimer is present on every guide page, stating the library is an educational resource and is not an official product of any school, agency, or standards body unless explicitly endorsed",
+    "The production build passes all CI gates: lint, typecheck, unit, schema-validation, exclusion-list, cost-ceiling, readability, a11y (axe/pa11y), offline E2E, no-telemetry defense-in-depth",
+    "HTTPS-only access is enforced; no mixed content",
+    "No secrets, API keys, or tokens are present in the deployed build, the repository, or any CI logs"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "A pull request implementing production deployment configuration, versioned cache/update strategy, and non-endorsement disclaimer for oer-science-labs, with a verified live production URL.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

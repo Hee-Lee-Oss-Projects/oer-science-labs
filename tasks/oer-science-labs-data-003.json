@@ -1,0 +1,33 @@
+{
+  "id": "oer-science-labs-data-003",
+  "title": "Experiment-guide content schema + provenance/review-log format",
+  "project": "oer-science-labs",
+  "type": "data",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "science", "software"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "oer-science-labs stores experiment guides as structured, versioned records. This task defines the canonical JSON/MDX schema for a guide (following the content-format ADR from arch-001) and the append-only provenance/review-log format that records science, safety, and dry-run sign-offs for every guide. Build-time validation must enforce the schema, including the no-self-approval rule and exclusion-check result. This schema is provisional until arch-001 lands; this task must not finalize until arch-001 is complete.",
+  "objective": "Define and publish the experiment-guide content schema covering all required fields: discipline, grade bands, minAge, supervision, setting, time, group size, materials (item/quantity/cost/substitutions/hazardFlags), estTotalCost with ceiling flag, procedure with inline safety callouts, science and misconceptions, assessment and extensions, curriculumAlignments (framework/code/link/rationale — codes and links only, no restricted full text), the full safety block (hazards/PPE/allergens-ingestion/disposal/photosensitivity-sensory/prohibited-substitutions/firstAidRef/exclusionCheck), readingLevel, sources, the three review roles, reviewLogRef, lastReviewed, lang, license, contentVersion, integrityHash, and hardInvalidate. Also define the append-only review-log entry format.",
+  "acceptanceCriteria": [
+    "Schema captures all required guide fields: discipline, gradeBands, minAge, supervision, setting, timeMinutes, groupSize, materials[], estTotalCost (with ceilingRespected flag), procedure steps with inline safety callouts, science (concept/explanation/commonMisconceptions[]), assessment (questions[]/extensions[]), curriculumAlignments[] (framework/code/statementRef link/rationale), safety block (hazards[]/ppe[]/allergensIngestion[]/disposal/photosensitivitySensory[]/prohibitedSubstitutions[]/firstAidRef/exclusionCheck), readingLevel, sources[] (org/title/url/retrievedDate/sourceLicense), authoredBy, scienceReviewedBy, safetyApprovedBy, reviewLogRef, lastReviewed, lang, contentLicense, contentVersion, integrityHash, hardInvalidate",
+    "Schema follows the content format decided in arch-001 (this task explicitly depends on arch-001 being closed)",
+    "Build-time validation rejects a guide missing required citation or safety fields",
+    "Build-time validation rejects a guide where safetyApprovedBy or scienceReviewedBy equals authoredBy (no self-approval)",
+    "Build-time validation rejects a guide where exclusionCheck is not 'pass' (CI-asserted via the list from arch-002)",
+    "Review-log entry format is append-only and records: PR number, commit SHA, contentVersion, authoredBy, scienceReviewedBy, safetyApprovedBy, sources checked, exclusionCheck result, dry-run result, and any divergence decision",
+    "curriculumAlignments fields store standard code + link + own rationale only — no verbatim restricted standard text is embedded in the schema or any guide"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "A pull request adding the experiment-guide JSON/MDX schema file and the provenance/review-log format specification to the oer-science-labs repository, with accompanying build-time validation logic.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

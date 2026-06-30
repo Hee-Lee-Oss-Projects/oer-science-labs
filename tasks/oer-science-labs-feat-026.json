@@ -1,0 +1,34 @@
+{
+  "id": "oer-science-labs-feat-026",
+  "title": "Materials-availability presets per region (advisory, no PII)",
+  "project": "oer-science-labs",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "software"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "oer-science-labs guides list materials with substitutions, but materials availability varies by region — a US-centric substitution list may not apply in other countries or settings. A lightweight, purely advisory, client-side regional preset lets educators pick a region to surface the most locally applicable material notes and substitution options, without collecting any personal data or telemetry. The feature is advisory only: it does not change the guide content, block any guide, or require a user account.",
+  "objective": "Implement a client-side, no-PII, advisory regional preset selector that lets a user choose their broad region (e.g. North America, Europe, South/Southeast Asia, Sub-Saharan Africa, Latin America — list to be confirmed with partner) to filter or highlight material substitution notes most relevant to that region. The selection is stored in localStorage only (no server, no cookie, no analytics). No user is tracked; the feature is opt-in and the default view shows all substitutions.",
+  "acceptanceCriteria": [
+    "A regional preset selector is implemented as a purely client-side UI component; no network request is made when a region is selected or changed",
+    "The user's region selection is persisted in localStorage only; it is never sent to a server, analytics endpoint, or third party",
+    "The feature does not collect, infer, or store any personally identifiable information; selecting a region does not identify or track the user",
+    "The default/unset state shows all material substitutions for all regions; the regional preset narrows or highlights region-relevant notes without hiding global safety information",
+    "The selector is fully accessible: keyboard navigable, screen-reader labeled, and meets WCAG 2.2 AA",
+    "The feature works offline after first load (service worker precache is not broken by the addition)",
+    "The CI no-telemetry E2E test still passes: no unexpected outbound network request is triggered by using the region selector",
+    "The feature passes code review from the maintainer; a11y review confirms no regressions"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "A pull request adding the client-side, no-PII, advisory regional materials-availability preset selector to the oer-science-labs static site.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

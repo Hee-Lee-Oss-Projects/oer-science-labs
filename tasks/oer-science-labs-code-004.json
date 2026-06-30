@@ -1,0 +1,35 @@
+{
+  "id": "oer-science-labs-code-004",
+  "title": "Repo scaffold + CI: schema-validation, exclusion-list, cost-ceiling, readability, no-telemetry audit",
+  "project": "oer-science-labs",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "science", "software"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "oer-science-labs needs a pnpm workspace, CI pipeline, and validation tooling that enforce the content schema, the hard exclusion list, per-guide cost ceilings, readability targets, and the zero-telemetry/zero-PII requirement before any guide or site work begins. Defense in depth for no-telemetry requires both a static CI audit and a runtime network-interception E2E (a static grep alone does not pass). This task depends on data-003 (schema must exist before CI can validate against it).",
+  "objective": "Scaffold the pnpm monorepo, configure TypeScript/ESM, set up the CI pipeline (lint, typecheck, unit, schema-validation, exclusion-list check, cost-ceiling check, readability check, no-telemetry audit, offline E2E), and wire the build-time validator that enforces the guide schema. The CI pipeline must fail on any lint/type/unit/schema error, any exclusion-list hit, any guide over its cost ceiling, any readability miss for the guide's grade band, and any unexpected outbound network request detected by the runtime E2E. The no-telemetry check must use defense in depth: a static tracker/PII audit plus a runtime network-interception E2E that fails on any unexpected outbound request, with CSP connect-src 'none' asserted.",
+  "acceptanceCriteria": [
+    "pnpm workspace with TypeScript/ESM is scaffolded; pnpm build && pnpm test && pnpm lint pass on the empty/starter codebase",
+    "CI fails on lint, typecheck, or unit-test errors",
+    "CI fails on schema-validation errors (any guide not conforming to the schema from data-003 blocks merge)",
+    "CI fails when a guide trips the hard exclusion list (any keyword or activity pattern from the exclusion list in arch-002 causes a CI failure)",
+    "CI fails when a guide's estTotalCost exceeds its declared per-guide cost ceiling",
+    "CI fails when a guide's measured readingLevel falls outside the target range for its grade band",
+    "CI no-telemetry check uses defense in depth: a static grep/audit for known tracker patterns and PII field names, PLUS a runtime Playwright network-interception E2E that fails the build on any unexpected outbound request; CSP connect-src 'none' is asserted and tested",
+    "CI fails on offline E2E failure (the static site must load and serve guides after first visit with no network)",
+    "MIT license file and CC-BY-4.0 content license notice are in place"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "A pull request adding the pnpm monorepo scaffold, TypeScript/ESM configuration, and full CI pipeline (schema-validation, exclusion-list, cost-ceiling, readability, no-telemetry defense-in-depth, offline E2E) to the oer-science-labs repository.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

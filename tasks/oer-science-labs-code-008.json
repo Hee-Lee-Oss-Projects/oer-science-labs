@@ -1,0 +1,33 @@
+{
+  "id": "oer-science-labs-code-008",
+  "title": "Browse/filter UI (discipline, grade band, cost, materials, hazard level) — offline",
+  "project": "oer-science-labs",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "science", "software", "accessibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "oer-science-labs needs a browse and filter interface so educators can find relevant guides quickly. All filtering must work offline (client-side only, no server) since many target users have limited connectivity. The UI must meet WCAG 2.2 AA and print cleanly. This task builds on the static site skeleton (code-005) and is required before i18n (code-014) and the production deployment (code-021).",
+  "objective": "Build the browse/filter UI for oer-science-labs that allows educators to filter guides by discipline, grade band, cost, available materials, and hazard level. All filter logic must run client-side so it works offline after first visit. The UI must be keyboard-navigable, screen-reader accessible, and render per-guide print output. No telemetry, no tracking, no server calls.",
+  "acceptanceCriteria": [
+    "Guides can be browsed and filtered by discipline, grade band, estimated cost, required materials, and hazard level — all client-side with no server request",
+    "Browse and guide-detail views load and function correctly offline after first visit (verified by offline E2E)",
+    "UI is keyboard-navigable (focus order, skip-nav, visible focus indicators) and screen-reader accessible (semantic HTML, ARIA where needed); automated axe/pa11y checks pass with 0 critical issues",
+    "Per-guide print/PDF output renders a clean, readable, standalone page (no web navigation chrome in print output)",
+    "No telemetry, third-party scripts, or unexpected outbound network requests; CSP connect-src 'none' maintained; runtime network-interception E2E passes",
+    "UI passes the offline E2E and accessibility CI gates added in code-004",
+    "Responsive design works across desktop, tablet, and mobile viewports"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+  ],
+  "output": "A pull request adding the browse/filter UI (discipline, grade band, cost, materials, hazard level) to the oer-science-labs static site, with all filter logic running client-side for offline use.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}
