@@ -22,8 +22,8 @@
     "Document is versioned and stored as a first-class artifact (not prose buried in a guide), and is referenced by the content schema (data-003) and CI (code-004)"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md"
   ],
   "output": "A pull request adding the hazard taxonomy document, safety-review rubric, and hard exclusion list (CI-encodable) to the oer-science-labs repository, as the safety framework artifact that gates all subsequent guide authoring.",
   "requestor": "TBD",

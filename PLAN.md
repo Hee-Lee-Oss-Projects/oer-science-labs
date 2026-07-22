@@ -346,7 +346,7 @@ partner is secured, criterion (6) is **outstanding**.
 
 **"Publicly Shipped (generic public good)" success state.** Criteria (1)–(5) can be fully met with no
 partner. If, by a **decision point 6 months after the M3 build is production-ready**, no partner is
-secured, the steward + Elyos governance may declare **"Publicly Shipped (generic public good)"**: the
+secured, the steward + Hee-Lee Oss governance may declare **"Publicly Shipped (generic public good)"**: the
 library is deployed and distributed directly and via educator/OER channels, with outcomes tracked by
 best-effort educator self-report. This is a recognized, honest success state distinct from the fuller
 "Shipped (partner-validated)" state; a later endorsement upgrades the status rather than gating launch.
@@ -392,7 +392,7 @@ parallel from M1).
 ## Work breakdown
 
 The itemized, schema-mapped backlog lives in **TASKS.md**, organized by the M0–M3 milestones above.
-Each task maps to an Elyos Task JSON (see schema), is sized (small/medium/large), risk-tagged, and
+Each task maps to a Hee-Lee Oss Task JSON (see schema), is sized (small/medium/large), risk-tagged, and
 names a reviewer. TASKS.md also includes acceptance criteria for the most important tasks per
 milestone, milestone Definitions of Done, a backlog, and a complete, schema-valid example Task JSON.
 
@@ -411,7 +411,7 @@ milestone, milestone Definitions of Done, a backlog, and a complete, schema-vali
   field-testing, and the incident-triage process.
 - **Partner / requestor: TO BE SECURED** — a named school/district, teacher association, or OER/
   education nonprofit confirming need, priorities, and field-validating in classrooms.
-- **Elyos governance/board:** arbitrates edge cases, exclusion-list changes, and risk-tier decisions.
+- **Hee-Lee Oss governance/board:** arbitrates edge cases, exclusion-list changes, and risk-tier decisions.
 
 ## Dependencies & integrations
 
@@ -423,7 +423,7 @@ milestone, milestone Definitions of Done, a backlog, and a complete, schema-vali
 - **Tooling/libraries:** static-site generator, service-worker/PWA tooling, i18n library, readability
   checker, test stack (Vitest, Playwright, axe-core/pa11y), client PDF/print.
 - **Hosting:** static host (GitHub Pages / Netlify / Cloudflare Pages) — no app server.
-- **Elyos pieces:** Task schema (`packages/schema`), CLI workspace prep / PR flow (donated lane),
+- **Hee-Lee Oss pieces:** Task schema (`packages/schema`), CLI workspace prep / PR flow (donated lane),
   good-deed definition & risk-tier governance, review/sign-off process.
 - **Human/expert dependency:** credentialed safety reviewers, science/curriculum reviewers,
   reproduction educators, and a partner org — the gating non-software dependencies.
@@ -455,7 +455,7 @@ endorsement, (5) incidental PII arriving via the incident-report channel.
 
 **Controls.**
 - **No secrets** in the app; static hosting only; no API keys/tokens/credentials in code, logs, or
-  receipts (per Elyos rule).
+  receipts (per Hee-Lee Oss rule).
 - **No telemetry / no student PII — defense in depth:** strict CSP with **`connect-src 'none'`**
   (plus locked-down `script-src`/`img-src`/`font-src 'self'`); a **runtime network-interception E2E**
   that fails the build on any unexpected outbound request; and a static CI audit for trackers/PII
@@ -505,12 +505,12 @@ endorsement, (5) incidental PII arriving via the incident-report channel.
 
 ## References
 
-- Elyos work rules — `C:\code\elyos\CLAUDE.md`
-- Good-deed definition & risk tiers — `C:\code\elyos\docs\good-deed-definition.md`
-- Task schema — `C:\code\elyos\packages\schema\src\schemas.ts`
-- Portfolio roadmap — `C:\code\elyos\planning\ROADMAP.md`
+- Hee-Lee Oss work rules — `C:\code\hee-lee-oss\CLAUDE.md`
+- Good-deed definition & risk tiers — `C:\code\hee-lee-oss\docs\good-deed-definition.md`
+- Task schema — `C:\code\hee-lee-oss\packages\schema\src\schemas.ts`
+- Portfolio roadmap — `C:\code\hee-lee-oss\planning\ROADMAP.md`
 - Exemplar plan (depth/structure reference) — `C:\code\Ofelia\plan.md`
-- Sibling medium-risk plan (house style) — `C:\code\elyos\planning\projects\proper-prepper\PLAN.md`
+- Sibling medium-risk plan (house style) — `C:\code\hee-lee-oss\planning\projects\proper-prepper\PLAN.md`
 - Open content/standards sources (license-checked per use): OpenStax, CK-12, PhET; NGSS (© Achieve,
   Inc.); national curricula (e.g. UK National Curriculum under OGL); published science-teacher-
   association lab-safety guidance; occupational-safety and poison-control/first-aid authorities.
@@ -586,7 +586,7 @@ Roadmap & milestones; Work breakdown; Governance, roles & stakeholders; Dependen
 Risks & mitigations; Security & privacy; Sustainability & maintenance; Open questions; References —
 plus Appendix A and this sign-off.
 
-**Reviewed for correctness against Elyos rules and the good-deed definition.**
+**Reviewed for correctness against Hee-Lee Oss rules and the good-deed definition.**
 - *Good-deed criteria:* tangible public benefit (free, safe science labs), freely available (MIT /
   CC-BY-4.0), not primarily for-profit (no kit sales/lead-gen), no harm/discrimination/misinformation
   (hard exclusion list + consensus-science stance), specific enough for AI sessions with required
@@ -611,4 +611,4 @@ ratifying the hard exclusion list + its change process; recruiting/verifying cre
 reviewers; choosing the second curriculum framework + first non-English locale; and deciding whether a
 one-time legal review of standards-reuse + the liability disclaimer is warranted.
 
-**Status:** Draft v0.1.0 — ready for maintainer and Elyos-governance review.
+**Status:** Draft v0.1.0 — ready for maintainer and Hee-Lee Oss-governance review.

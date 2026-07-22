@@ -24,8 +24,8 @@
     "The CI no-telemetry E2E test still passes; the offline E2E test confirms the feature works after first load with no connectivity"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md"
   ],
   "output": "A pull request adding the client-side teacher pack bundle export (multi-guide printable output + consolidated materials list) to the oer-science-labs static site.",
   "requestor": "TBD",

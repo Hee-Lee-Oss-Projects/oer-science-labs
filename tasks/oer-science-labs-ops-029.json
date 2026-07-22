@@ -24,8 +24,8 @@
     "A summary report of the re-validation pass is committed to the repository: guides reviewed, changes made, any guides flagged, and the next re-review due date"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md"
   ],
   "output": "A pull request recording updated review-log entries, updated lastReviewed dates, and a summary report for the annual safety + curriculum re-validation pass across all published oer-science-labs guides.",
   "requestor": "TBD",

@@ -24,8 +24,8 @@
     "Priority disciplines and grade bands reflect partner input if partner-017 is complete; otherwise cover the broadest feasible spread"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md"
   ],
   "output": "A series of pull requests expanding the oer-science-labs guide library to at least 30 total guides, each dual-reviewed, dry-run, source-cited, and exclusion-checked, across at least 3 disciplines and 3 grade bands.",
   "requestor": "TBD",

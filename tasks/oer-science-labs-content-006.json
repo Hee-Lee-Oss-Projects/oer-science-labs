@@ -24,8 +24,8 @@
     "Guide renders correctly from the schema in the static site, with print output clean and readable"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md"
   ],
   "output": "A pull request adding one complete, source-cited, dual-reviewed, and dry-run experiment guide (conforming to the data-003 schema) to the oer-science-labs repository, with a PR-tied review-log entry.",
   "requestor": "TBD",

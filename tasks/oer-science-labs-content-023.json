@@ -23,8 +23,8 @@
     "The authoring process for easy-read variants is documented so future contributors can produce additional variants consistently"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md"
   ],
   "output": "A pull request adding easy-read / low-literacy variants of at least 3 published guides (with full safety blocks preserved, accessibility/readability reviewed, and science/safety accuracy reviewed) to the oer-science-labs repository.",
   "requestor": "TBD",

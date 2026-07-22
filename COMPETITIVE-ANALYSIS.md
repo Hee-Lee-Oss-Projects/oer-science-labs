@@ -229,7 +229,7 @@ hands-on, low-resource-feasible, credentialed-safety-reviewed, standards-mapped,
   same cost-ceiling + safety review, turning "no equipment" into "buildable equipment."
 - **An MCP server ("safety-lint")** exposing the hazard taxonomy + exclusion-list pre-screen + cost-
   ceiling + readability checks as tools any Claude/agent authoring workflow (across all siblings) can
-  call — productizes the safety machinery as reusable Elyos infrastructure.
+  call — productizes the safety machinery as reusable Hee-Lee Oss infrastructure.
 
 ---
 

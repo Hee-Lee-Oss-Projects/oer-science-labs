@@ -21,9 +21,9 @@
     "Each ADR states context, options considered, decision, and consequences; decisions are consistent with MIT code / CC-BY-4.0 content and zero-telemetry constraints"
   ],
   "resources": [
-    "C:\\code\\elyos\\planning\\projects\\oer-science-labs\\PLAN.md",
-    "C:\\code\\elyos\\docs\\good-deed-definition.md",
-    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts"
+    "C:\\code\\hee-lee-oss\\planning\\projects\\oer-science-labs\\PLAN.md",
+    "C:\\code\\hee-lee-oss\\docs\\good-deed-definition.md",
+    "C:\\code\\hee-lee-oss\\packages\\schema\\src\\schemas.ts"
   ],
   "output": "A pull request adding the foundational ADR documents (content format decided first, site/SW tooling, hosting, content-version manifest/hard-invalidation, PDF/print) for oer-science-labs.",
   "requestor": "TBD",

@@ -22,8 +22,8 @@
     "At least one unit test each covers: a guide passing the cost-ceiling gate, a guide failing the cost-ceiling gate, a guide passing the readability gate, a guide failing the readability gate"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md"
   ],
   "output": "A pull request wiring cost-ceiling and readability CI gates end-to-end in the oer-science-labs CI pipeline, with local authoring tooling that surfaces failures before PR.",
   "requestor": "TBD",

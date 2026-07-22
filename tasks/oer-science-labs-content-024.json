@@ -23,8 +23,8 @@
     "The icon set is reviewed by an a11y reviewer to confirm icons are distinguishable in greyscale/print and meet minimum contrast or labeling requirements for WCAG 2.2 AA use"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md"
   ],
   "output": "A pull request adding the open-licensed pictograph/icon set (SVG files, attribution records, taxonomy mapping, and design specification) for materials, hazards, and PPE to the oer-science-labs repository.",
   "requestor": "TBD",

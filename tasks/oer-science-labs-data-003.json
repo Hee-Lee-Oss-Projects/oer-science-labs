@@ -23,8 +23,8 @@
     "curriculumAlignments fields store standard code + link + own rationale only — no verbatim restricted standard text is embedded in the schema or any guide"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md"
   ],
   "output": "A pull request adding the experiment-guide JSON/MDX schema file and the provenance/review-log format specification to the oer-science-labs repository, with accompanying build-time validation logic.",
   "requestor": "TBD",

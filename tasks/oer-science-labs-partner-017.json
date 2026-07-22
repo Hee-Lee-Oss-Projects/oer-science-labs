@@ -22,8 +22,8 @@
     "No personal data of students, parents, or non-public contacts is recorded or committed to the repository; any personal data received (e.g. contact email) is handled per the partner's data-sharing agreement and not committed"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md"
   ],
   "output": "A document recording the secured partner commitment (letter of support or MOU reference, named disciplines/grade-bands/languages, field-testing commitment) and a PR updating verifiedNeed and requestor across task files.",
   "requestor": "TBD",

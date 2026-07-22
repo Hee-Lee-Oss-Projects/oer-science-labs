@@ -23,8 +23,8 @@
     "No secrets, API keys, or tokens are present in the deployed build, the repository, or any CI logs"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md"
   ],
   "output": "A pull request implementing production deployment configuration, versioned cache/update strategy, and non-endorsement disclaimer for oer-science-labs, with a verified live production URL.",
   "requestor": "TBD",

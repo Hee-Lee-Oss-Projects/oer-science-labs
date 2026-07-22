@@ -22,8 +22,8 @@
     "A brief audit report is committed to the repository recording: audit date, packages updated, vulnerabilities addressed, SRI changes made, any open issues with mitigations, and the next recommended audit date"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md"
   ],
   "output": "A pull request resolving flagged dependency vulnerabilities, pinning the lockfile, hardening SRI on any third-party assets, and committing an audit report to the oer-science-labs repository.",
   "requestor": "TBD",

@@ -23,8 +23,8 @@
     "No telemetry or new network requests introduced; CSP and no-telemetry CI gates continue to pass"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md",
     "https://www.w3.org/TR/WCAG22/"
   ],
   "output": "A pull request hardening the oer-science-labs UI to WCAG 2.2 AA with automated axe/pa11y gates and a signed-off manual assistive-technology audit report.",

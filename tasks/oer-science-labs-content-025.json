@@ -24,8 +24,8 @@
     "Guides render correctly in the static site with clean print output; outdoor-specific safety callouts are visually distinct"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md"
   ],
   "output": "A pull request adding at least 4 outdoor/field-science guides (spanning weather, ecology, or naked-eye astronomy), each with outdoor-specific safety blocks, full citations, dual review, and dry-run results, to the oer-science-labs repository.",
   "requestor": "TBD",

@@ -25,8 +25,8 @@
     "All guides pass the exclusion check and are not on the hard exclusion list from arch-002"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md"
   ],
   "output": "A pull request (or series of PRs) adding at least 8 experiment guides across at least 2 disciplines and 2 grade bands, each dual-reviewed, dry-run, source-cited, and exclusion-checked, to the oer-science-labs repository.",
   "requestor": "TBD",

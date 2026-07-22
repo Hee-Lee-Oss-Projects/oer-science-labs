@@ -23,8 +23,8 @@
     "Responsive design works across desktop, tablet, and mobile viewports"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md"
   ],
   "output": "A pull request adding the browse/filter UI (discipline, grade band, cost, materials, hazard level) to the oer-science-labs static site, with all filter logic running client-side for offline use.",
   "requestor": "TBD",

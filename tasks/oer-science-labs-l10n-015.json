@@ -24,8 +24,8 @@
     "Translation review sign-off (reviewer name, safety-accuracy confirmation) is recorded in the PR"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md"
   ],
   "output": "A pull request adding a complete, safety-accuracy-reviewed UI message catalog for the first non-English locale to the oer-science-labs repository.",
   "requestor": "TBD",

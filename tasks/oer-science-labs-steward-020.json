@@ -23,8 +23,8 @@
     "No student-identifying information is collected, stored, or committed at any point in the field-testing process"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md"
   ],
   "output": "A field-testing report (partner-signed) documenting at least 5 guide tests in real classrooms, educator feedback, issues found and addressed, and confirmation of no student PII collection — submitted as a PR to the oer-science-labs repository.",
   "requestor": "TBD",

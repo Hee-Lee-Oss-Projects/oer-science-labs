@@ -22,8 +22,8 @@
     "The outcomes and re-review process documents are committed to the repository as version-controlled artifacts, not just wiki or PR comments"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md"
   ],
   "output": "A pull request adding the outcomes-tracking process documentation and the annual/event-driven safety re-review cadence (with staleness flagging) to the oer-science-labs repository.",
   "requestor": "TBD",

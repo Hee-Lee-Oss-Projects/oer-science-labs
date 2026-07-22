@@ -22,8 +22,8 @@
     "No verbatim restricted standard text was introduced during the review process; all corrections maintain the code+link+rationale-only model"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md"
   ],
   "output": "A pull request adding the alignment review report (validating guide-to-standard mappings from data-012) with a qualified reviewer's sign-off, to the oer-science-labs repository.",
   "requestor": "TBD",

@@ -23,8 +23,8 @@
     "No verbatim restricted standard text appears anywhere in the crosswalk dataset or guide files"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md",
     "https://www.nextgenscience.org/"
   ],
   "output": "A pull request adding the curriculum crosswalk data model and license-clean code-level mappings to at least 2 frameworks, covering the guides in content-007, to the oer-science-labs repository.",

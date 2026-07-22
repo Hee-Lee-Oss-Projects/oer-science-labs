@@ -25,8 +25,8 @@
     "MIT license file and CC-BY-4.0 content license notice are in place"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md"
   ],
   "output": "A pull request adding the pnpm monorepo scaffold, TypeScript/ESM configuration, and full CI pipeline (schema-validation, exclusion-list, cost-ceiling, readability, no-telemetry defense-in-depth, offline E2E) to the oer-science-labs repository.",
   "requestor": "TBD",

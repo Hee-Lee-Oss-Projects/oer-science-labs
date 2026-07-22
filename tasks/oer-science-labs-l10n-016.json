@@ -23,8 +23,8 @@
     "Translation review sign-off (reviewer names, safety-accuracy confirmation, science-accuracy confirmation) is recorded in the PR-tied review-log entry"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md"
   ],
   "output": "A pull request adding at least one safety-accuracy-reviewed, fully localized experiment guide (in the locale from l10n-015) to the oer-science-labs repository.",
   "requestor": "TBD",

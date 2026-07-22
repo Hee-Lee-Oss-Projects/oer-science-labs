@@ -24,8 +24,8 @@
     "The feature passes code review from the maintainer; a11y review confirms no regressions"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md"
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md"
   ],
   "output": "A pull request adding the client-side, no-PII, advisory regional materials-availability preset selector to the oer-science-labs static site.",
   "requestor": "TBD",

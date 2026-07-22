@@ -24,8 +24,8 @@
     "The new framework is surfaced in the browse/filter UI options (code-008) if technically feasible within scope; at minimum the data is available for the UI to use"
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/oer-science-labs/blob/main/TASKS.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/oer-science-labs/blob/main/TASKS.md",
     "https://www.nextgenscience.org/"
   ],
   "output": "A pull request extending the oer-science-labs curriculum crosswalk with at least one additional license-verified curriculum framework and code-level mappings for published guides.",
